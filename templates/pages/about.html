@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Me{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+
+<div class="about-container">
+    <div class="profile-picture">
+        <img src="{% static 'images/fallout_guy.jpg' %}" alt="Profile Picture">
+    </div>
+    <div class="profile-info">
+        <h1>About Me</h1>
+        <h6>Fullstack developer: Ricardo Hurtado</h6>
+        <p>
+            Hi, I'm Ricardo. I'm a passionate individual with a love for coding and technology. 
+            I enjoy solving problems and building cool projects. In my free time, you can find me 
+            exploring new technologies or playing video games.
+        </p>
+    </div>
+</div>
+{% endblock content %}

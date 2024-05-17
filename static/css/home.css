@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+    padding-right: 20px;
+    /* Adjust as needed */
+}
+
+.image {
+    width: 300px;
+    /* Adjust the size of the image */
+    height: 300px;
+    border-radius: 60%;
+    /* Ensures circular shape */
+    overflow: hidden;
+    /* Clips the image into a circle */
+    margin-left: 20px;
+    /* Adjust spacing between image and text */
+}
+
+.image img {
+    width: 100%;
+    /* Ensures the image fills the circle */
+    height: 100%;
+    object-fit: cover;
+    /* Maintains aspect ratio */
+}
